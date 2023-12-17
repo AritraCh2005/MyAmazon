@@ -1,0 +1,188 @@
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a light background color to the body */
+body {
+    background-color: #b0d7ff;
+}
+
+/* Basic styling for the navbar */
+.navbar {
+    background-color: #7fe700; /* Dark red background color for the navbar */
+    padding: 10px;
+
+}
+
+/* Styling for the Amazon icon */
+.navbar img {
+    height: 30px; /* Adjust the height as needed */
+}
+
+/* Styling for the search bar */
+.search-bar {
+    margin-left: auto;
+    padding-right: 70px;
+    padding-left:50px;
+}
+
+/* Styling for the navbar links */
+.navbar-nav a {
+    color: white;
+    margin: 0 10px;
+}
+
+/* Styling for the cards */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: box-shadow 1s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.btn-primary {
+    background-color: rgba(255, 196, 0, 0.884);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e68a00;
+}
+
+/* Styling for the footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+    list-style-type:none;
+}
+
+/* Additional styles for the copyright sentence */
+.footer p {
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width: 750px) {
+    /* Adjust styles for screens with a maximum width of 768 pixels (typical tablets) */
+    .navbar img {
+        height: 25px; /* Adjust the height of the Amazon icon on smaller screens */
+    }
+
+    .card-img-top {
+        max-height: 150px; /* Adjust the maximum height of the card images on smaller screens */
+    }
+
+    .card-title {
+        font-size: 1.2rem; /* Adjust the font size of the card titles on smaller screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjust styles for screens with a maximum width of 600 pixels (typical mobile devices) */
+    .navbar img {
+        height: 20px; /* Further reduce the height of the Amazon icon on smaller screens */
+    }
+
+    .search-bar {
+        margin-right: auto; /* Center-align the search bar on smaller screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack navbar links vertically on smaller screens */
+        align-items: center;
+    }
+
+    .navbar-nav a {
+        margin: 10px 0; /* Add vertical margin between navbar links on smaller screens */
+    }
+
+    .footer-section {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+.form-control me-2
+{
+    margin: 5px 5px;
+}
+
+/* Media query for screens with a width greater than 600px and less than 1200px */
+@media screen and (min-width: 150px) and (max-width: 1199px) {
+    .col-md-4 {
+        width: 50%; /* Set the width to 50% to display two cards in a line */
+    }
+    .search-bar {
+        padding-right: 0.5px;
+        padding-left:0.5px;
+    }
+    .navbar {
+        background-color: #bcff6b; /* Dark red background color for the navbar */
+        padding: 2px;
+    }
+    .navbar img {
+        height: 12px; /* Adjust the height as needed */
+    }
+    
+    
+}
+@media screen and (max-width: 600px) {
+    .search-bar input {
+        width: 90px; /* Adjust the width as needed */
+    }
+
+    .search-bar button {
+        padding: 0.200rem 0.40rem; /* Adjust the padding as needed */
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .col-md-4 {
+        width: 100%; /* Set the width to 50% to display two cards in a line */
+    }
+}
